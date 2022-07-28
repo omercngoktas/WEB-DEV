@@ -1,0 +1,335 @@
+@import '../styles/shared';
+
+.Nav {
+  padding: 0;
+  margin-top: 0;
+  background: #000;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  z-index: 10;
+}
+
+.image {
+  margin-bottom: 0%;
+  width: 100vw;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.cont {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+.container {
+  display: flex;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+.who {
+  position: relative;
+  overflow: hidden;
+
+  height: 753px;
+  width: 384px;
+  background-color: $black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.whoTwo {
+  z-index: 1;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: top 0.8s;
+
+  width: 384px;
+
+  padding-top: 45%;
+  background-image: url('../images/who.jpg');
+  background-size: cover;
+}
+.whenTwo {
+  z-index: 1;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: top 0.8s;
+  width: 384px;
+
+  padding-top: 45%;
+  background-image: url('../images/when.jpeg');
+  background-size: cover;
+}
+.footer {
+  justify-items: center;
+  align-items: center;
+  height: 15vh;
+  display: grid;
+  position: absolute;
+  bottom: 0;
+  width: 384px;
+  background-color: #fff;
+  opacity: 0.6;
+}
+h1 {
+  font-size: 3vh;
+  opacity: 0.7;
+}
+.icon {
+  opacity: 0.5;
+  margin-bottom: 10vh;
+  width: 2vw;
+  height: 4vh;
+}
+.whereTwo {
+  z-index: 1;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: top 0.8s;
+
+  width: 384px;
+
+  padding-top: 45%;
+  background-image: url('../images/where.jpeg');
+  background-size: cover;
+}
+.whyOne {
+  z-index: 1;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: top 0.8s;
+
+  width: 384px;
+
+  padding-top: 45%;
+  background-image: url('../images/why.jpeg');
+  background-size: cover;
+}
+
+.who:hover .whoTwo {
+  top: 0;
+}
+.who:hover .whenTwo {
+  top: 0;
+}
+.who:hover .whereTwo {
+  top: 0;
+}
+.who:hover .whyOne {
+  top: 0;
+}
+
+.whyTwo {
+  position: relative;
+  transition: 0.8s;
+  height: 753px;
+  width: 384px;
+  background-color: $black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.frame2 {
+  background-color: $black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 136px;
+  align-self: stretch;
+}
+
+.personFill {
+  background-color: $black;
+  padding: 11px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  align-self: stretch;
+}
+
+.envelope {
+  padding: 6.25px 0;
+  display: flex;
+  align-items: center;
+  height: 3x;
+  width: 50px;
+}
+.vector {
+  flex: 1;
+  align-self: stretch;
+  object-fit: cover;
+}
+.vectoro {
+  opacity: 0.8;
+  flex: 0.3;
+  align-self: stretch;
+  object-fit: cover;
+}
+.frame1 {
+  background-color: $black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  align-self: stretch;
+}
+.why {
+  width: 103px;
+  flex: 1;
+  display: flex;
+  color: $white;
+  @include rubik-32-bold;
+}
+.whyEmphasis0 {
+  color: $crimson;
+  @include rubik-32-bold;
+}
+.frame3 {
+  padding: 0 0 19px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 19px;
+  align-self: stretch;
+}
+.askUs {
+  width: 76px;
+  font-family: 'Rubik';
+  font-size: 13px;
+  font-weight: 300;
+  line-height: normal;
+  color: $white;
+  align-self: stretch;
+  display: flex;
+}
+.frame12 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+  height: 120px;
+}
+.link {
+  background-color: $black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+}
+.facebook {
+  width: 85px;
+  height: 120px;
+}
+.twitter {
+  width: 88px;
+  height: 120px;
+}
+.google {
+  width: 80px;
+  height: 120px;
+}
+.linkedin {
+  width: 50px;
+  height: 120px;
+}
+.header {
+  background-color: rgba(45, 49, 61, 0.47);
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+}
+.menu {
+  margin-right: 106px;
+  width: 86px;
+  height: 120px;
+}
+
+.one {
+  height: 100vh;
+
+  background-image: url(../images/who.jpg);
+  background-size: cover;
+}
+.oneone {
+  height: 50vh;
+  margin-top: 20vh;
+  margin-left: 40vh;
+  margin-right: 40vh;
+  display: grid;
+
+  justify-items: center;
+}
+.twotwo {
+  height: 50vh;
+  margin-top: 20vh;
+  margin-left: 30vh;
+  margin-right: 30vh;
+  display: inline-flex;
+}
+
+.two {
+  height: 100vh;
+
+  background-color: #66686e;
+  display: flex;
+  justify-items: center;
+}
+
+.cont {
+  margin-top: 5vh;
+  margin-left: 20vh;
+  margin-bottom: 7vh;
+
+  background-color: #fff;
+}
+.cont1 {
+  height: 24vh;
+  background-color: #ff1d4d;
+}
+.cont11 {
+  margin-left: 20vh;
+  padding-top: 4vh;
+  background-color: #ff1d4d;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  align-items: baseline;
+  font-size: 10vh;
+}
+
+h3 {
+  color: gray;
+  margin: 0;
+  padding: 0;
+  font-size: 3vh;
+}

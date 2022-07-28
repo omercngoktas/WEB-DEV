@@ -1,0 +1,18 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ul-items{
+    list-style: none;
+    display: flex;
+}
+
+.ul-items > li{
+    padding: 10px;
+}
+
+.react-logo{
+    width: 40px;
+}

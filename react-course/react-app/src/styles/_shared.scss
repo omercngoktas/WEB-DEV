@@ -1,0 +1,18 @@
+// This is the project stylesheet
+
+// Colors
+$black: rgba(28, 32, 43, 1);
+$black-2: rgba(0, 0, 0, 1);
+$crimson: rgba(255, 29, 77, 1);
+$transparent-black: rgba(11, 9, 9, 0.43);
+$transparent-black-2: rgba(0, 0, 0, 0.3);
+$transparent-rosy-brown: rgba(167, 150, 150, 0.59);
+$white: rgba(255, 255, 255, 1);
+
+// Typographies
+@mixin rubik-32-bold {
+  font-family: 'Rubik';
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+}
