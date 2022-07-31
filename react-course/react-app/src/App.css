@@ -37,3 +37,26 @@ body {
 .hero--text {
     margin-top: 0px;
 }
+
+.card {
+    width: 175px;
+    font-size: 12px;
+}
+
+.card--img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.card--stats {
+    display: flex;
+    align-items: center;
+}
+
+.gray {
+    color: gray;
+}
+
+.price {
+    font-weight: 600;
+}

@@ -6,7 +6,6 @@ function Navbar() {
     return (
         <nav className="nav-class">
             <img src={airbnb} className="nav--img"></img>
-            <h3>This is title</h3>
         </nav>
     );
 }
