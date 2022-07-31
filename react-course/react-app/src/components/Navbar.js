@@ -1,9 +1,14 @@
-import React from 'react';
+import React from "react";
+import airbnb from "../images/airbnb.png";
+// import "../App.css";
 
-import styles from './Why.module.scss';
-
-const Navbar = () => {
-  return <div className={styles.header}>helö</div>;
-};
+function Navbar() {
+    return (
+        <nav className="nav-class">
+            <img src={airbnb} className="nav--img"></img>
+            <h3>This is title</h3>
+        </nav>
+    );
+}
 
 export default Navbar;
