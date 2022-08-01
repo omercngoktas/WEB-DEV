@@ -3,32 +3,27 @@ import Navbar from "./components/Navbar";
 import "./App.css";
 import Hero from "./components/Hero";
 import Card from "./components/Card";
-import Test from "./components/Test";
+import data from "./components/data";
 
-
-function App() {
-    const names= ["alice","bob","charlie","danielle"];
-    const capitalizedNames=names.map((name)=>{
-        return name[0].toUpperCase() + name.slice(1)
+export default function App() {
+    // <Hero />
+    const cards = data.map(item => {
+        return (
+            <Card 
+                img={item.coverImg}
+                rating={item.stats.rating}
+                reviewCount={item.stats.reviewCount}
+                location={item.location}
+                title={item.title}
+                price={item.price}
+            />
+        )
     })
-    console.log(capitalizedNames)
-    
-    
+
     return (
         <div>
             <Navbar />
-            <Hero />            
-            <Card 
-                img={require("./images/katie-zaferes.png")}
-                rating="5.0"
-                rewievCount={6}
-                country="USA"
-                title="Life Lessons with Katie Zaferes"
-                price={136}
-            />
-            <Test />
+            {cards}
         </div>
-    );
-};
-
-export default App;
+    )
+}
