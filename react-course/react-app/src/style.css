@@ -13,6 +13,7 @@ body {
     display: flex;
     align-items: center;
     padding: 20px;
+    width: 100%;
     justify-content: center;
     border-end-start-radius: 10px;
     border-end-end-radius: 10px;
@@ -27,31 +28,57 @@ body {
     color: white;
 }
 
-.card {
+.card:not(.hr){
     display: flex;
     margin: 20px;
 }
 
 .card--img {
-    width: 300px;
-    height: 337px;
+    width: 15vw;
+    height: 50vh;
+    min-height: 200px;
+    max-height: 400px;
+    min-width: 150px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .card--location--img {
-    width: 15px;
+    width: 0.75rem;
+    margin-right: 5px;
+}
+
+.card--components {
+    align-self: center;
+    margin-left: 30px;
+    margin-right: 20px;
 }
 
 .location--title {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    height: 30px;
-    /* border: 3px solid green; */
+    width: 30rem;
+    margin-bottom: 5px;
+}
+
+.location--text {
+    text-transform: uppercase;
+}
+
+.card--date {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 8px;
 }
 
 .google--maps {
     text-decoration: underline;
-    margin-left: 10px;
+    margin-left: 25px;
     color: grey;
 }
+
+.card--description {
+    width: 70%;
+}
+
