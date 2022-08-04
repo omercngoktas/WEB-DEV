@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.navbar {
+    background-color: #f44f51;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
+}
+
+.navbar--icon {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.navbar--title {
+    color: white;
+}
+
+.card {
+    display: flex;
+    margin: 20px;
+}
+
+.card--img {
+    width: 300px;
+    height: 337px;
+    object-fit: cover;
+}
+
+.card--location--img {
+    width: 15px;
+}
+
+.location--title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    /* border: 3px solid green; */
+}
+
+.google--maps {
+    text-decoration: underline;
+    margin-left: 10px;
+    color: grey;
+}

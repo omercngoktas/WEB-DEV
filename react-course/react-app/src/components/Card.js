@@ -1,17 +1,19 @@
-import React from "react"
+import React from "react";
 
 export default function Card(props) {
     return (
         <div className="card">
-            <img src={`../images/${props.img}`} className="card--image" />
-            <div className="card--stats">
-                <img src="../images/star.png" className="card--star" />
-                <span>{props.rating}</span>
-                <span className="gray">({props.reviewCount}) • </span>
-                <span className="gray">{props.location}</span>
+            <img className="card--img" src={props.imageUrl} />            
+            <div className="location--title">
+                <img className="card--location--img" src={require(`../images/${props.locationIcon}`)}/>
+                <h4>{props.location}</h4>
+                <a href="www.google.com" className="google--maps">View on Google Maps</a>
             </div>
-            <p>{props.title}</p>
-            <p><span className="bold">From ${props.price}</span> / person</p>
         </div>
-    )
+
+    );
 }
+
+
+
+            

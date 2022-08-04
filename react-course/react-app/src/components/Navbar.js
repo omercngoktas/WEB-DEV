@@ -1,13 +1,14 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
-import airbnb from "../images/airbnb.png";
-// import "../App.css";
+import "../style.css";
 
-function Navbar() {
+export default function Navbar(props) {
     return (
-        <nav className="nav-class">
-            <img src={airbnb} className="nav--img"></img>
+        <nav className="navbar">
+            <img src={require(`../images/${props.src}`)} className="navbar--icon"></img>
+            <h1 className="navbar--title">
+                {props.title}
+            </h1>
         </nav>
     );
 }
-
-export default Navbar;
