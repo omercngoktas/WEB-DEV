@@ -23,7 +23,6 @@ export default function Card(props) {
                     <p>{props.description}</p>
                 </div>
             </div>
-            <hr className="hr"></hr>
         </div>
 
     );
