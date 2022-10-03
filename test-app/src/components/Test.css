@@ -1,0 +1,72 @@
+.date {
+    display: flex;
+    flex-direction: column;
+    background-color: #2a2a2a;
+    color: white;
+    border: 1px solid #ececec;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.date__month {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.date__year {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.date__day {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.product-item {
+    display: flex;
+    background-color: #4b4b4b;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 12px;
+    box-shadow: 0 3.5px 10px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-flow: column-reverse;
+    align-items: flex-end;
+}
+
+.description__title {
+    font-size: 1rem;
+    flex: 1;
+    margin: 0 1rem;
+    color: white;
+}
+
+.description__price {
+    font-weight: bold;
+    font-size: 1rem;
+    border: 1px solid white;
+    background-color: #40005d;
+    border-radius: 12px;
+    padding: 0.5rem;
+}
+
+@media (min-width: 580px) {
+    .description {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        flex: 1;
+    }
+}

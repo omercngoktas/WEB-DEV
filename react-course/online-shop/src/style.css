@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.title--class {
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.image--class {
+    width: 200px;
+}
+
+.card--class {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    grid-template-columns: 100px 100px 100px;
+}
+
+.basket--class {
+    padding: 3px;
+    border: 2px solid;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 90px;
+}
